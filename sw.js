@@ -44,6 +44,13 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
 
+  // Don't cache live third-party data (GitHub stats/contribution graph, form submissions) —
+  // let these always hit the network so the numbers stay current.
+  const url = new URL(req.url);
+  if (url.hostname === 'api.github.com' || url.hostname === 'github-contributions-api.jogruber.de' || url.hostname === 'formspree.io') {
+    return;
+  }
+
   const isNavigation = req.mode === 'navigate' || (req.headers.get('accept') || '').includes('text/html');
 
   if (isNavigation) {
