@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="Abubakar Abdallah Sa'i — Software Engineer building reliable software, scalable systems, and thoughtful digital experiences.">
+<meta name="description" content="Abubakar Abdallah Sa'i, Software Engineer building reliable software, scalable systems, and thoughtful digital experiences.">
 <script>try{if(sessionStorage.getItem('splashSeen')){document.documentElement.classList.add('skip-splash');}}catch(e){}</script>
 
 <!-- PWA -->
@@ -18,7 +18,7 @@
 <link rel="icon" href="./assets/icons/icon-192.png" sizes="192x192" type="image/png">
 <link rel="icon" href="./assets/logo-icon.png" type="image/png">
 
-<title>Abubakar Abdallah Sa'i — Software Engineer</title>
+<title>Abubakar Abdallah Sa'i | Software Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
@@ -325,8 +325,20 @@ nav.scrolled{
 .gh-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem;}
 .gh-stat b{display:block;font-family:var(--font-head);font-size:1.4rem;color:var(--text);}
 .gh-stat span{font-size:.75rem;color:var(--muted);}
-.gh-heatmap{display:grid;grid-template-columns:repeat(26,1fr);gap:3px;}
-.gh-heatmap i{aspect-ratio:1;border-radius:2px;background:var(--surface-2);}
+.gh-contrib-total{font-size:.78rem;color:var(--text);margin-bottom:.7rem;}
+.gh-contrib-total b{color:var(--green);font-weight:600;}
+.gh-contrib-scroll{overflow-x:auto;padding-bottom:2px;scrollbar-width:thin;}
+.gh-contrib-scroll::-webkit-scrollbar{height:5px;}
+.gh-contrib-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:99px;}
+.gh-contrib-months{position:relative;height:14px;margin-left:24px;min-width:max-content;}
+.gh-contrib-months span{position:absolute;top:0;font-family:var(--font-mono);font-size:.6rem;color:var(--muted);white-space:nowrap;}
+.gh-contrib-body{display:flex;gap:4px;min-width:max-content;}
+.gh-contrib-days{display:grid;grid-template-rows:repeat(7,10px);gap:3px;width:20px;font-family:var(--font-mono);font-size:.58rem;color:var(--muted);}
+.gh-contrib-days span{display:flex;align-items:center;}
+.gh-contrib-grid{display:grid;grid-template-rows:repeat(7,10px);grid-auto-columns:10px;grid-auto-flow:column;gap:3px;}
+.gh-contrib-grid i{width:10px;height:10px;border-radius:2px;background:var(--surface-2);display:block;}
+.gh-contrib-legend{display:flex;align-items:center;gap:.3rem;justify-content:flex-end;margin-top:.7rem;font-family:var(--font-mono);font-size:.62rem;color:var(--muted);}
+.gh-contrib-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;}
 .gh-note{font-size:.72rem;color:var(--muted);margin-top:1rem;font-family:var(--font-mono);}
 
 /* ---------- TESTIMONIALS ---------- */
@@ -363,6 +375,7 @@ textarea.form-input{min-height:110px;resize:vertical;grid-column:1/-1;margin-bot
 footer{border-top:1px solid var(--border);padding:2rem 0;}
 .footer-inner{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;font-size:.8rem;color:var(--muted);}
 .footer-links{display:flex;gap:1.4rem;}
+.footer-credit{display:flex;align-items:center;gap:.4rem;}
 .footer-links a:hover{color:var(--text);}
 
 /* ---------- SPLASH / BOOT SCREEN ---------- */
@@ -523,7 +536,7 @@ html.skip-splash #splash{display:none !important;}
       <p class="hero-lead">So, who am I?</p>
       <h1 class="hero-name">Abubakar <span class="accent">Abdallah Sa'i</span></h1>
       <p class="hero-role">Software Engineer</p>
-      <p class="hero-desc">Building reliable software, scalable systems, and thoughtful digital experiences — founder of <strong>Psyberly Labs</strong>.</p>
+      <p class="hero-desc">Building reliable software, scalable systems, and thoughtful digital experiences. Founder of <strong>Psyberly Labs</strong>.</p>
       <div class="hero-btns">
         <a href="#projects" class="btn btn-primary">&lt;/&gt; View Projects</a>
         <a href="#contact" class="btn btn-secondary">
@@ -534,10 +547,11 @@ html.skip-splash #splash{display:none !important;}
         <a href="./assets/Abubakar-Abdallah-Sai-CV.pdf" download class="btn btn-ghost cv-link">Download CV ↓</a>
       </div>
       <div class="hero-socials">
-        <!-- TODO: replace # with your real profile links -->
+        <!-- TODO: replace remaining # with your real X profile link -->
         <a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/abdallah-abubakar-50155b3b3" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#" target="_blank" rel="noopener">X</a>
+        <a href="https://wa.me/2348138919269" target="_blank" rel="noopener">WhatsApp</a>
         <a href="mailto:hello@psyberlylabs.com">Email</a>
       </div>
     </div>
@@ -592,8 +606,8 @@ html.skip-splash #splash{display:none !important;}
     <div>
       <div class="eyebrow">About Me</div>
       <h2 class="section-h2">Software engineer, systems thinker.</h2>
-      <p style="color:var(--muted);margin-bottom:1rem;max-width:520px;">I'm a full-stack software engineer and the founder of <strong style="color:var(--text)">Psyberly Labs</strong>, focused on building scalable, maintainable, and user-focused software — from real-time dashboards to offline-first PWAs.</p>
-      <p style="color:var(--muted);max-width:520px;">I specialize in full-stack development, API architecture, database design, cloud infrastructure, and performance optimization — with a bias toward shipping products that hold up in production.</p>
+      <p style="color:var(--muted);margin-bottom:1rem;max-width:520px;">I'm a full-stack software engineer and the founder of <strong style="color:var(--text)">Psyberly Labs</strong>, focused on building scalable, maintainable, and user-focused software, from real-time dashboards to offline-first PWAs.</p>
+      <p style="color:var(--muted);max-width:520px;">I specialize in full-stack development, API architecture, database design, cloud infrastructure, and performance optimization, with a bias toward shipping products that hold up in production.</p>
       <ul class="about-values">
         <li>Clean &amp; scalable code</li>
         <li>Open source enthusiast</li>
@@ -719,7 +733,7 @@ html.skip-splash #splash{display:none !important;}
       <h2 class="section-h2" style="margin-bottom:2rem;">Where I've worked</h2>
       <div class="timeline">
         <div class="tl-item">
-          <div class="tl-date">2024 — Present</div>
+          <div class="tl-date">2024 – Present</div>
           <div class="tl-role">Founder &amp; Lead Product Engineer</div>
           <div class="tl-org">Psyberly Labs</div>
           <ul class="tl-bullets">
@@ -746,15 +760,33 @@ html.skip-splash #splash{display:none !important;}
         <h3>GitHub</h3>
         <a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">View Profile ↗</a>
       </div>
-      <!-- TODO: replace these placeholder stats with real numbers or a GitHub stats widget/API call -->
+      <!-- Live stats pulled from the public GitHub REST API (no token needed) — see loadGithubStats() below -->
       <div class="gh-stats">
-        <div class="gh-stat"><b>—</b><span>Repositories</span></div>
-        <div class="gh-stat"><b>—</b><span>Commits</span></div>
-        <div class="gh-stat"><b>—</b><span>Contributions</span></div>
-        <div class="gh-stat"><b>—</b><span>Followers</span></div>
+        <div class="gh-stat"><b id="ghRepos">—</b><span>Repositories</span></div>
+        <div class="gh-stat"><b id="ghStars">—</b><span>Stars</span></div>
+        <div class="gh-stat"><b id="ghFollowers">—</b><span>Followers</span></div>
+        <div class="gh-stat"><b id="ghFollowing">—</b><span>Following</span></div>
       </div>
-      <div class="gh-heatmap" id="heatmap"></div>
-      <div class="gh-note">// stats placeholder — connect the GitHub API or a contribution-graph widget here</div>
+      <div class="gh-contrib">
+        <div class="gh-contrib-total" id="ghContribTotal">Loading contribution activity…</div>
+        <div class="gh-contrib-scroll">
+          <div class="gh-contrib-months" id="ghContribMonths"></div>
+          <div class="gh-contrib-body">
+            <div class="gh-contrib-days"><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
+            <div class="gh-contrib-grid" id="ghContribGrid"></div>
+          </div>
+        </div>
+        <div class="gh-contrib-legend">
+          Less
+          <i style="background:var(--surface-2)"></i>
+          <i style="background:rgba(34,197,94,.3)"></i>
+          <i style="background:rgba(34,197,94,.55)"></i>
+          <i style="background:rgba(34,197,94,.8)"></i>
+          <i style="background:var(--green)"></i>
+          More
+        </div>
+      </div>
+      <div class="gh-note" id="ghNote">// live from github.com/Abdilito4-real</div>
     </div>
   </div>
 </section>
@@ -764,7 +796,7 @@ html.skip-splash #splash{display:none !important;}
   <div class="wrap reveal">
     <div class="eyebrow">Testimonials</div>
     <h2 class="section-h2">What people say</h2>
-    <p class="section-sub">// placeholder quotes — swap in real client/collaborator feedback</p>
+    <p class="section-sub">Placeholder quotes for now. Swap in real client or collaborator feedback.</p>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
@@ -773,7 +805,7 @@ html.skip-splash #splash{display:none !important;}
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"Clear communication and solid engineering instincts — exactly what our MVP needed."</p>
+        <p class="testi-quote">"Clear communication and solid engineering instincts. Exactly what our MVP needed."</p>
         <div class="testi-who"><div class="testi-avatar">B</div><div><div class="testi-name">Client Name</div><div class="testi-role">Product Lead, Company</div></div></div>
       </div>
       <div class="testi-card">
@@ -794,12 +826,13 @@ html.skip-splash #splash{display:none !important;}
       <p class="contact-sub">Have a project, opportunity, or interesting problem? Let's talk.</p>
       <div class="contact-links">
         <a href="mailto:hello@psyberlylabs.com">hello@psyberlylabs.com</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://wa.me/2348138919269" target="_blank" rel="noopener">WhatsApp ↗</a>
+        <a href="https://www.linkedin.com/in/abdallah-abubakar-50155b3b3" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
     <div class="form-card">
-      <form action="https://formspree.io/f/xkoyqowq" method="POST" onsubmit="handleSubmit(event)">
+      <form onsubmit="handleSubmit(event)">
         <div class="form-row">
           <input class="form-input" type="text" name="name" placeholder="Your name" required>
           <input class="form-input" type="email" name="email" placeholder="Email address" required>
@@ -808,7 +841,10 @@ html.skip-splash #splash{display:none !important;}
           <input class="form-input" type="text" name="subject" placeholder="Subject" style="grid-column:1/-1;">
         </div>
         <textarea class="form-input" name="message" placeholder="Tell me about your project..." required></textarea>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.47 14.38c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.14-.17.19-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.73-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51-.17-.01-.36-.01-.56-.01-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.19 3.02c.15.19 2.06 3.15 5 4.42.7.3 1.24.48 1.67.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.51 3.58 1.4 5.07L2 22l5.19-1.5a9.87 9.87 0 0 0 4.85 1.28h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 17.9h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.1.9.9-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+          Send via WhatsApp →
+        </button>
       </form>
     </div>
   </div>
@@ -822,7 +858,13 @@ html.skip-splash #splash{display:none !important;}
       <a href="#">Terms</a>
       <a href="#">Sitemap</a>
     </div>
-    <div class="mono">Built with ❤ and lots of ☕</div>
+    <div class="mono footer-credit">
+      Built with
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:13px;height:13px;color:var(--green);"><path d="M12 21s-6.7-4.35-9.33-8.2C1.02 10.6 1.4 7.6 3.6 5.9c1.9-1.47 4.53-1.14 6.02.57L12 8.9l2.38-2.43c1.49-1.71 4.12-2.04 6.02-.57 2.2 1.7 2.58 4.7.93 6.9C18.7 16.65 12 21 12 21z"/></svg>
+      and lots of
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;color:var(--muted);"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+      coffee
+    </div>
   </div>
 </footer>
 
@@ -871,27 +913,110 @@ document.querySelectorAll('.skill-list img, .tech-chip img').forEach(img=>{
   img.addEventListener('error',()=>{ img.style.display='none'; }, {once:true});
 });
 
-// Fake GitHub heatmap (placeholder — replace with real contribution data)
-const heatmap=document.getElementById('heatmap');
-for(let i=0;i<130;i++){
-  const cell=document.createElement('i');
-  const r=Math.random();
-  if(r>.85) cell.style.background='var(--green)';
-  else if(r>.65) cell.style.background='rgba(34,197,94,.4)';
-  heatmap.appendChild(cell);
+// Live GitHub stats — public REST API, no token required (unauthenticated rate limit: 60 req/hr per visitor IP)
+const GITHUB_USERNAME = 'Abdilito4-real'; // TODO: update if this isn't your GitHub username
+async function loadGithubStats(){
+  const repoEl=document.getElementById('ghRepos'), starEl=document.getElementById('ghStars'),
+        follEl=document.getElementById('ghFollowers'), followingEl=document.getElementById('ghFollowing'),
+        noteEl=document.getElementById('ghNote');
+  try{
+    const userRes=await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`);
+    if(!userRes.ok) throw new Error('user fetch failed');
+    const user=await userRes.json();
+    repoEl.textContent=user.public_repos ?? '—';
+    follEl.textContent=user.followers ?? '—';
+    followingEl.textContent=user.following ?? '—';
+
+    // Sum stars across public repos (paginated, capped at 100 repos to keep this to one request)
+    const reposRes=await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`);
+    if(reposRes.ok){
+      const repos=await reposRes.json();
+      const totalStars=Array.isArray(repos) ? repos.reduce((sum,r)=>sum+(r.stargazers_count||0),0) : 0;
+      starEl.textContent=totalStars;
+    }
+    if(noteEl) noteEl.textContent=`// live from github.com/${GITHUB_USERNAME}`;
+  }catch(err){
+    // Offline, rate-limited, or username not found — fail quietly and keep placeholders
+    if(noteEl) noteEl.textContent='// live stats unavailable right now — view profile directly';
+  }
 }
 
-// Contact form submit
-async function handleSubmit(e){
-  e.preventDefault();
-  const form=e.target, btn=form.querySelector('button[type="submit"]'), data=new FormData(form);
-  btn.disabled=true; const original=btn.textContent; btn.textContent='Sending...';
+// Live GitHub contribution grid — rendered natively (no external chart image) from
+// github-contributions-api.jogruber.de, a free public API that mirrors the real GitHub calendar data.
+const MONTH_NAMES=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const LEVEL_COLORS=['var(--surface-2)','rgba(34,197,94,.3)','rgba(34,197,94,.55)','rgba(34,197,94,.8)','var(--green)'];
+async function loadGithubContributions(){
+  const totalEl=document.getElementById('ghContribTotal'), gridEl=document.getElementById('ghContribGrid'),
+        monthsEl=document.getElementById('ghContribMonths'), noteEl=document.getElementById('ghNote');
   try{
-    const res=await fetch(form.action,{method:form.method,body:data,headers:{'Accept':'application/json'}});
-    if(res.ok){ btn.textContent='Message Sent ✓'; form.reset(); }
-    else{ btn.textContent='Something went wrong'; }
-  }catch(err){ btn.textContent='Network error'; }
-  finally{ setTimeout(()=>{ btn.disabled=false; btn.textContent=original; },3000); }
+    const res=await fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=last`);
+    if(!res.ok) throw new Error('contributions fetch failed');
+    const data=await res.json();
+    const days=data.contributions || [];
+    if(!days.length) throw new Error('no contribution data');
+
+    // Align the grid to the Sunday on/before the first returned date, matching GitHub's own layout
+    const firstDate=new Date(days[0].date+'T00:00:00');
+    const gridStart=new Date(firstDate);
+    gridStart.setDate(gridStart.getDate()-gridStart.getDay());
+
+    gridEl.innerHTML='';
+    monthsEl.innerHTML='';
+    const CELL=13; // 10px cell + 3px gap
+    let lastMonth=-1, total=0;
+
+    days.forEach(day=>{
+      const date=new Date(day.date+'T00:00:00');
+      total+=day.count||0;
+      const dayIndex=Math.round((date-gridStart)/86400000);
+      const week=Math.floor(dayIndex/7), row=dayIndex%7;
+
+      const cell=document.createElement('i');
+      cell.style.background=LEVEL_COLORS[day.level]||LEVEL_COLORS[0];
+      cell.style.gridColumn=week+1;
+      cell.style.gridRow=row+1;
+      cell.title=`${day.count} contribution${day.count===1?'':'s'} on ${date.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
+      gridEl.appendChild(cell);
+
+      if(date.getDate()<=7 && date.getMonth()!==lastMonth){
+        lastMonth=date.getMonth();
+        const label=document.createElement('span');
+        label.textContent=MONTH_NAMES[lastMonth];
+        label.style.left=(week*CELL)+'px';
+        monthsEl.appendChild(label);
+      }
+    });
+
+    totalEl.innerHTML=`<b>${total.toLocaleString()}</b> contributions in the last year`;
+  }catch(err){
+    totalEl.textContent='Contribution activity unavailable right now';
+    if(noteEl) noteEl.textContent='// live stats unavailable right now — view profile directly';
+  }
+}
+loadGithubStats();
+loadGithubContributions();
+
+// Contact form submit
+const WHATSAPP_NUMBER='2348138919269'; // formatted from 0813 891 9269 with Nigeria country code +234
+function handleSubmit(e){
+  e.preventDefault();
+  const form=e.target, btn=form.querySelector('button[type="submit"]'), originalHTML=btn.innerHTML;
+  const name=form.name.value.trim(), email=form.email.value.trim(),
+        subject=form.subject.value.trim(), message=form.message.value.trim();
+
+  const lines=[
+    `New message from ${name} via portfolio`,
+    email ? `Email: ${email}` : '',
+    subject ? `Subject: ${subject}` : '',
+    '',
+    message
+  ].filter(Boolean);
+  const waUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+
+  window.open(waUrl, '_blank', 'noopener');
+  btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><polyline points="20 6 9 17 4 12"/></svg> Opening WhatsApp…';
+  form.reset();
+  setTimeout(()=>{ btn.innerHTML=originalHTML; },3000);
 }
 
 // PWA: register service worker
