@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = 'iconic-abdallah-portfolio-' + CACHE_VERSION;
 
 // Core files needed for the app shell to work offline.
@@ -6,6 +6,9 @@ const CACHE_NAME = 'iconic-abdallah-portfolio-' + CACHE_VERSION;
 const PRECACHE_URLS = [
   './',
   './index.html',
+  './privacy.html',
+  './terms.html',
+  './sitemap.html',
   './manifest.json',
   './assets/logo-icon.png',
   './assets/icons/icon-192.png',
@@ -51,10 +54,10 @@ self.addEventListener('fetch', (event) => {
       fetch(req)
         .then((res) => {
           const copy = res.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put('./index.html', copy));
+          if (res.ok) caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
           return res;
         })
-        .catch(() => caches.match('./index.html'))
+        .catch(() => caches.match(req).then((cached) => cached || caches.match('./index.html')))
     );
     return;
   }

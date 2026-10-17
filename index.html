@@ -303,6 +303,8 @@ nav.scrolled{
 .proj-card .proj-body{padding:1.3rem;}
 .proj-card h3{font-size:1.05rem;margin-bottom:.4rem;}
 .proj-card p{color:var(--muted);font-size:.85rem;margin-bottom:.9rem;}
+.proj-grid[hidden]{display:none;}
+.proj-more{display:flex;justify-content:center;margin-top:1.5rem;}
 
 /* ---------- EXPERIENCE + GITHUB ---------- */
 .exp-grid{display:grid;grid-template-columns:1fr;gap:3rem;}
@@ -316,7 +318,7 @@ nav.scrolled{
 .tl-org{color:var(--muted);font-size:.85rem;margin-bottom:.6rem;}
 .tl-bullets{list-style:none;display:flex;flex-direction:column;gap:.35rem;}
 .tl-bullets li{font-size:.85rem;color:var(--muted);padding-left:1rem;position:relative;}
-.tl-bullets li::before{content:'—';position:absolute;left:0;color:var(--border);}
+.tl-bullets li::before{content:'•';position:absolute;left:0;color:var(--border);}
 
 .gh-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;height:fit-content;}
 .gh-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;}
@@ -523,7 +525,7 @@ html.skip-splash #splash{display:none !important;}
       <p class="hero-lead">So, who am I?</p>
       <h1 class="hero-name">Abubakar <span class="accent">Abdallah Sa'i</span></h1>
       <p class="hero-role">Software Engineer</p>
-      <p class="hero-desc">Building reliable software, scalable systems, and thoughtful digital experiences — founder of <strong>Psyberly Labs</strong>.</p>
+      <p class="hero-desc">Building reliable software, scalable systems, and thoughtful digital experiences, founder of <strong>Psyberly Labs</strong>.</p>
       <div class="hero-btns">
         <a href="#projects" class="btn btn-primary">&lt;/&gt; View Projects</a>
         <a href="#contact" class="btn btn-secondary">
@@ -536,7 +538,7 @@ html.skip-splash #splash{display:none !important;}
       <div class="hero-socials">
         <!-- TODO: replace # with your real profile links -->
         <a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/abdallah-abubakar-50155b3b3" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#" target="_blank" rel="noopener">X</a>
         <a href="mailto:hello@psyberlylabs.com">Email</a>
       </div>
@@ -592,8 +594,8 @@ html.skip-splash #splash{display:none !important;}
     <div>
       <div class="eyebrow">About Me</div>
       <h2 class="section-h2">Software engineer, systems thinker.</h2>
-      <p style="color:var(--muted);margin-bottom:1rem;max-width:520px;">I'm a full-stack software engineer and the founder of <strong style="color:var(--text)">Psyberly Labs</strong>, focused on building scalable, maintainable, and user-focused software — from real-time dashboards to offline-first PWAs.</p>
-      <p style="color:var(--muted);max-width:520px;">I specialize in full-stack development, API architecture, database design, cloud infrastructure, and performance optimization — with a bias toward shipping products that hold up in production.</p>
+      <p style="color:var(--muted);margin-bottom:1rem;max-width:520px;">I'm a full-stack software engineer and the founder of <strong style="color:var(--text)">Psyberly Labs</strong>, focused on building scalable, maintainable, and user-focused software, from real-time dashboards to offline-first PWAs.</p>
+      <p style="color:var(--muted);max-width:520px;">I specialize in full-stack development, API architecture, database design, cloud infrastructure, and performance optimization, with a bias toward shipping products that hold up in production.</p>
       <ul class="about-values">
         <li>Clean &amp; scalable code</li>
         <li>Open source enthusiast</li>
@@ -678,33 +680,94 @@ html.skip-splash #splash{display:none !important;}
     <p class="section-sub">A few things I've shipped recently.</p>
 
     <div class="proj-featured">
-      <div class="proj-img"><img src="./Screenshot (260).png" alt="NexFlow Dashboard"></div>
+      <div class="proj-img"><img src="./Screenshot (260).png" alt="JINIE SCHOOLS homepage"></div>
       <div class="proj-body">
-        <div class="proj-tag">Featured · School Platform Portal</div>
-        <h3>NexFlow Dashboard</h3>
-        <p>Real-time analytics SaaS with offline-first architecture, built for schools managing complex operational data.</p>
-        <div class="proj-chips"><span class="chip">Next.js</span><span class="chip">Supabase</span></div>
-        <div class="proj-links"><a href="https://school-portal-phi-silk.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="proj-tag">Featured · Education</div>
+        <h3>JINIE SCHOOLS</h3>
+        <p>A school website introducing its educational journey and giving students access to the school portal.</p>
+        <div class="proj-links"><a href="https://school-portal-phi-silk.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a></div>
       </div>
     </div>
 
     <div class="proj-grid">
       <div class="proj-card">
-        <div class="proj-img"><img src="./Screenshot (151).png" alt="Lens App"></div>
+        <div class="proj-img"><img src="./Screenshot (151).png" alt="Lens daily photo challenge"></div>
         <div class="proj-body">
-          <h3>Lens App</h3>
-          <p>AI-powered knowledge base with vector search.</p>
-          <div class="proj-chips"><span class="chip">React</span><span class="chip">OpenAI</span></div>
+          <h3>Lens</h3>
+          <p>A daily photo challenge app where people share their best shot around a new prompt.</p>
           <div class="proj-links"><a href="https://lensapp.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a></div>
         </div>
       </div>
       <div class="proj-card">
-        <div class="proj-img"><img src="./Screenshot (245).png" alt="Eden Alpha Marketing"></div>
+        <div class="proj-img"><img src="./Screenshot (245).png" alt="oxbuilder China market entry website"></div>
         <div class="proj-body">
-          <h3>Eden Alpha Marketing</h3>
-          <p>Offline-capable field operations app with background sync.</p>
-          <div class="proj-chips"><span class="chip">PWA</span><span class="chip">Node.js</span></div>
-          <div class="proj-links"><a href="https://www.edenalphamarketing.com/" target="_blank" rel="noopener">Live Demo ↗</a></div>
+          <h3>oxbuilder</h3>
+          <p>Web3 growth and China market entry support, from strategy to execution.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (224).png" alt="Alf X Web3 growth marketing website"></div>
+        <div class="proj-body">
+          <h3>Alf X</h3>
+          <p>Data-driven Web3 marketing strategies built to help projects grow.</p>
+          <div class="proj-links"><a href="https://alfxmarketingagency.com/" target="_blank" rel="noopener">Live Demo ↗</a></div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (417).png" alt="Shayin Abba tea and dining experience"></div>
+        <div class="proj-body">
+          <h3>Shayin Abba</h3>
+          <p>A Kaduna tea and dining experience featuring Arabian tea, masa, and grilled delights.</p>
+          <div class="proj-links"><a href="https://shayin-abba.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="proj-more">
+      <button class="btn btn-secondary" id="projectsMoreBtn" type="button" aria-expanded="false" aria-controls="moreProjects">View more projects</button>
+    </div>
+    <div class="proj-grid" id="moreProjects" hidden>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (9).png" alt="KAD-SAMIS asset management portal"></div>
+        <div class="proj-body">
+          <h3>KAD-SAMIS</h3>
+          <p>Kaduna State Asset Management Information System for managing government assets.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (116).png" alt="Cliniq medical workspace sign-in"></div>
+        <div class="proj-body">
+          <h3>Cliniq</h3>
+          <p>Unity Medical Centre's workspace for patient registration, queues, consultations, and billing.</p>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (130).png" alt="SourceFi secure sourcing portal"></div>
+        <div class="proj-body">
+          <h3>SourceFi</h3>
+          <p>A sourcing portal for construction materials, featuring verified suppliers and secure sourcing.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (225).png" alt="Hezky Health IVF and medical equipment website"></div>
+        <div class="proj-body">
+          <h3>Hezky Health</h3>
+          <p>A healthcare website for IVF laboratory solutions, andrology diagnostics, and medical equipment.</p>
+          <div class="proj-links"><a href="https://hezkyhealth.com/" target="_blank" rel="noopener">Live Demo ↗</a></div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (400).png" alt="Dialogue Pharmacy &amp; Stores online pharmacy"></div>
+        <div class="proj-body">
+          <h3>Dialogue Pharmacy &amp; Stores</h3>
+          <p>An online pharmacy storefront for browsing medicines and ordering from Kaduna branches.</p>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img"><img src="./Screenshot (421).png" alt="SourceFi supplier sign-in page"></div>
+        <div class="proj-body">
+          <h3>SourceFi Supplier Sign-in</h3>
+          <p>A supplier sign-in page for posting sourcing requests and reviewing verified partners.</p>
         </div>
       </div>
     </div>
@@ -719,7 +782,7 @@ html.skip-splash #splash{display:none !important;}
       <h2 class="section-h2" style="margin-bottom:2rem;">Where I've worked</h2>
       <div class="timeline">
         <div class="tl-item">
-          <div class="tl-date">2024 — Present</div>
+          <div class="tl-date">2024 - Present</div>
           <div class="tl-role">Founder &amp; Lead Product Engineer</div>
           <div class="tl-org">Psyberly Labs</div>
           <ul class="tl-bullets">
@@ -748,13 +811,13 @@ html.skip-splash #splash{display:none !important;}
       </div>
       <!-- TODO: replace these placeholder stats with real numbers or a GitHub stats widget/API call -->
       <div class="gh-stats">
-        <div class="gh-stat"><b>—</b><span>Repositories</span></div>
-        <div class="gh-stat"><b>—</b><span>Commits</span></div>
-        <div class="gh-stat"><b>—</b><span>Contributions</span></div>
-        <div class="gh-stat"><b>—</b><span>Followers</span></div>
+        <div class="gh-stat"><b>N/A</b><span>Repositories</span></div>
+        <div class="gh-stat"><b>N/A</b><span>Commits</span></div>
+        <div class="gh-stat"><b>N/A</b><span>Contributions</span></div>
+        <div class="gh-stat"><b>N/A</b><span>Followers</span></div>
       </div>
       <div class="gh-heatmap" id="heatmap"></div>
-      <div class="gh-note">// stats placeholder — connect the GitHub API or a contribution-graph widget here</div>
+      <div class="gh-note">// Stats placeholder: connect the GitHub API or a contribution-graph widget here</div>
     </div>
   </div>
 </section>
@@ -764,7 +827,7 @@ html.skip-splash #splash{display:none !important;}
   <div class="wrap reveal">
     <div class="eyebrow">Testimonials</div>
     <h2 class="section-h2">What people say</h2>
-    <p class="section-sub">// placeholder quotes — swap in real client/collaborator feedback</p>
+    <p class="section-sub">// Placeholder quotes: swap in real client/collaborator feedback</p>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
@@ -773,7 +836,7 @@ html.skip-splash #splash{display:none !important;}
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"Clear communication and solid engineering instincts — exactly what our MVP needed."</p>
+        <p class="testi-quote">"Clear communication and solid engineering instincts, exactly what our MVP needed."</p>
         <div class="testi-who"><div class="testi-avatar">B</div><div><div class="testi-name">Client Name</div><div class="testi-role">Product Lead, Company</div></div></div>
       </div>
       <div class="testi-card">
@@ -794,7 +857,7 @@ html.skip-splash #splash{display:none !important;}
       <p class="contact-sub">Have a project, opportunity, or interesting problem? Let's talk.</p>
       <div class="contact-links">
         <a href="mailto:hello@psyberlylabs.com">hello@psyberlylabs.com</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.linkedin.com/in/abdallah-abubakar-50155b3b3" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a href="https://github.com/Abdilito4-real" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
@@ -818,11 +881,11 @@ html.skip-splash #splash{display:none !important;}
   <div class="wrap footer-inner">
     <div class="logo"><img src="./assets/logo-icon.png" class="logo-icon" alt=""> <span>Abubakar Abdallah Sa'i</span></div>
     <div class="footer-links">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Sitemap</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./sitemap.html">Sitemap</a>
     </div>
-    <div class="mono">Built with ❤ and lots of ☕</div>
+    <div class="mono">Built with care</div>
   </div>
 </footer>
 
@@ -871,7 +934,7 @@ document.querySelectorAll('.skill-list img, .tech-chip img').forEach(img=>{
   img.addEventListener('error',()=>{ img.style.display='none'; }, {once:true});
 });
 
-// Fake GitHub heatmap (placeholder — replace with real contribution data)
+// Fake GitHub heatmap (placeholder; replace with real contribution data)
 const heatmap=document.getElementById('heatmap');
 for(let i=0;i<130;i++){
   const cell=document.createElement('i');
@@ -919,6 +982,17 @@ if (installBtn) {
   });
 }
 window.addEventListener('appinstalled', () => { if (installBtn) installBtn.hidden = true; });
+
+const projectsMoreBtn = document.getElementById('projectsMoreBtn');
+const moreProjects = document.getElementById('moreProjects');
+if (projectsMoreBtn && moreProjects) {
+  projectsMoreBtn.addEventListener('click', () => {
+    const expanded = projectsMoreBtn.getAttribute('aria-expanded') === 'true';
+    projectsMoreBtn.setAttribute('aria-expanded', String(!expanded));
+    moreProjects.hidden = expanded;
+    projectsMoreBtn.textContent = expanded ? 'View more projects' : 'Show fewer projects';
+  });
+}
 </script>
 </body>
 </html>
